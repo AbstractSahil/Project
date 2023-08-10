@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#302C2C"> <!-- Set the background color here -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You must sign in to join"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="100dp"/>
+
+    <!-- "Login with Google" button and icon -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/border"> <!-- Use the border drawable as the background -->
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/google"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="Google Icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login with Google"
+            android:textSize="20dp"
+            android:layout_marginStart="8dp"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <!-- "Login with Apple ID" button and icon -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"> <!-- Use the border drawable as the background -->
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/apple"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="Apple Icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In with Apple ID"
+            android:textSize="20dp"
+            android:layout_marginStart="8dp"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="----------------Login----------------"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:inputType="text"
+        android:textColor="#D3D3D3"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="#D3D3D3"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have Account? Sign Up"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
